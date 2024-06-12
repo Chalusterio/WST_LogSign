@@ -7,11 +7,14 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
         fontWeight: 'bold',
+        letterSpacing: '1px',
     },
     button: {
         marginLeft: theme.spacing(2),
         borderRadius: '20px',
         textTransform: 'capitalize',
+        fontWeight: 'bold',
+        letterSpacing: '1px',
     },
 }));
 

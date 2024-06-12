@@ -16,8 +16,11 @@ const useStyles = makeStyles((theme) => ({
     gap: theme.spacing(2)
   },
   submit: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(3),
     borderRadius: 20, // Add border radius
+    fontWeight: 'bold', // Make button text bold
+    letterSpacing: '1px', // Add letter spacing
+    fontSize: '1rem', // Increase font size
   },
   link: {
     textDecoration: 'none',
@@ -78,31 +81,31 @@ export default function Login() {
           Login
         </Typography>
         <form className={classes.form}>
-          <TextField 
-            label='Email' 
-            variant='outlined' 
-            fullWidth 
-            value={email} 
-            onChange={handleEmailChange} 
-            error={Boolean(emailError)} 
-            helperText={emailError} 
+          <TextField
+            label='Email'
+            variant='outlined'
+            fullWidth
+            value={email}
+            onChange={handleEmailChange}
+            error={Boolean(emailError)}
+            helperText={emailError}
             margin="normal"
           />
-          <TextField 
-            label='Password' 
-            variant='outlined' 
-            type='password' 
-            fullWidth 
-            value={password} 
-            onChange={handlePasswordChange} 
-            error={Boolean(passwordError)} 
-            helperText={passwordError} 
+          <TextField
+            label='Password'
+            variant='outlined'
+            type='password'
+            fullWidth
+            value={password}
+            onChange={handlePasswordChange}
+            error={Boolean(passwordError)}
+            helperText={passwordError}
             margin="normal"
           />
-          <Button 
-            variant="contained" 
-            color="primary" 
-            fullWidth 
+          <Button
+            variant="contained"
+            color="primary"
+            fullWidth
             className={classes.submit}
             onClick={handleLogin} // Handle login button click
           >
